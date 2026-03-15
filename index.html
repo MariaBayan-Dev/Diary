@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diario personal básico</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-----HEADER DEL DIARIO----->
+    <header>
+        <div class="header-container">
+            <h1 class="diary-title">Diario Personal</h1>
+            <h2 class="diary-subtitle">Mis preocupaciones</h2>
+        </div>
+    </header>
+
+    <!----FORMULARIO DEL DIARIO---->
+
+    <form id="form-diary">
+        <textarea name="text-entries" id="text-entries" class="text-entries" placeholder="Escribe en el diario..."></textarea>
+        <input type="url" id="input-url" class="input-url" placeholder="Añade una imagen...">
+        <button id="btn-add" class="btn-add">Añadir entrada al diario</button>
+    </form>
+
+    <!----ENTRADAS DEL DIARIO---->
+    <main id="entries-container">
+
+        <!---ARTICLE DE EJEMPLO TEMPORAL--->
+        <article class="entries-article">
+            <span class="date-entry">12/12/2026</span>
+            <img src="https://picsum.photos/200" alt="Imágenes aleatorias">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Unde, pariatur! Nisi ad necessitatibus, tempore dignissimos modi 
+                ullam inventore eos harum exercitationem rerum quam praesentium! 
+                Doloremque pariatur error voluptatem aut est?
+            </p>
+
+            <button class="btn-edit">Editar entrada</button>
+            <button class="btn-delete">Borrar entrada</button>
+        </article>
+    </main>
+    
+    <!-----JAVASCRIPT----->
+    <script src="main.js"></script>
+</body>
+</html>
