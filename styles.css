@@ -17,3 +17,36 @@
     --header-font: 'Lora', serif;
     --text-font: 'Lato', sans-serif;
 }
+
+/*---ESTILOS GENERALES---*/
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    background-color: var(--body-color);
+    font-family: var(--text-font);
+    color: var(--text-color);
+}
+
+/*----ESTILOS HEADER----*/
+
+header{
+    text-align: center;
+    padding: 20px 0;
+}
+
+.header-container{
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.diary-title{
+    font-family: var(--header-font);
+}
+
+/*---ESTILOS FORMULARIO*---/
