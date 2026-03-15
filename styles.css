@@ -47,6 +47,23 @@ header{
 
 .diary-title{
     font-family: var(--header-font);
+    font-size: 2.5rem;
 }
 
-/*---ESTILOS FORMULARIO*---/
+/*---ESTILOS FORMULARIO-----*/
+
+.form-diary{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: var(--bg-card);
+    padding: 15px;
+    gap: 15px;
+    border-radius: 15px;
+}
+
+.text-entries{
+    min-height: 120px;
+}
