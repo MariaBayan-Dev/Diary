@@ -10,6 +10,7 @@
     --text-color-button: #f7f3ed; /*Color texto botones*/
     --text-color: #3a3a3a; /*Color de los textos*/
     --bg-card: #fffaf0; /*Color fondo tarjetas (articles)*/
+    --bg-text-area: #ebebeb; /*Color fondo textarea e inputs*/
     --accent-color: #a6ccc3; /*Color hover botones*/
 
     /*Fuentes*/
@@ -65,5 +66,37 @@ header{
 }
 
 .text-entries{
-    min-height: 120px;
+    min-height: 120px; /*Altura del textarea*/
+    resize: none;
+}
+
+.text-entries,
+.input-url{
+    background-color: var(--bg-text-area);
+    font-family: var(--text-font);
+    border: none;
+    border-radius: 15px;
+    padding: 15px;
+}
+
+.text-entries:focus,
+.input-url:focus{
+    outline: 2px solid var(--accent-color);
+}
+
+.btn-add{
+    border: none;
+    background-color: var(--button-color);
+    padding: 15px;
+    border-radius: 15px;
+    color: var(--text-color-button);
+    font-weight: bold;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    cursor: pointer;
+}
+
+.btn-add:hover{
+    background-color: var(--accent-color);
+    color: var(--text-color);
 }
