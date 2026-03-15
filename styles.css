@@ -142,3 +142,7 @@ header{
 .date-entry{
     font-weight: bold;
 }
+
+.text-entry{
+    margin-top: 10px;
+}
