@@ -20,6 +20,7 @@
     --text-font: 'Lato', sans-serif;
 }
 
+
 /*---ESTILOS GENERALES---*/
 
 *{
@@ -51,6 +52,7 @@ header{
     font-family: var(--header-font);
     font-size: 2.5rem;
 }
+
 
 /*---ESTILOS FORMULARIO-----*/
 
@@ -108,6 +110,7 @@ header{
     color: var(--text-color);
 }
 
+
 /*----ESTILOS ARTICLES---*/
 
 .entries-container{
@@ -117,17 +120,25 @@ header{
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     align-items: center;
     gap: 15px;
-    padding: 15px 0;
+}
+.entry-content{
+    padding: 15px;
 }
 
 .entries-article{
     background-color: var(--bg-card);
     border-radius: 15px;
-    padding: 15px;
     box-shadow: var(--box-shadow);
 }
 
 .entries-article img{
     width: 100%;
-    border-radius: 15px;
+    height: 300px;
+    border-radius: 15px 15px 0 0;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.date-entry{
+    font-weight: bold;
 }
