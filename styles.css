@@ -1,0 +1,19 @@
+/*---FONT----*/
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+
+/*---COLORES---*/
+
+:root{
+    --body-color: #f7deb2; /*Color del body*/
+    --button-color: #b05470; /*Color de los botones*/
+    --text-color-button: #f7f3ed; /*Color texto botones*/
+    --text-color: #3a3a3a; /*Color de los textos*/
+    --bg-card: #fffaf0; /*Color fondo tarjetas (articles)*/
+    --accent-color: #a6ccc3; /*Color hover botones*/
+
+    /*Fuentes*/
+
+    --header-font: 'Lora', serif;
+    --text-font: 'Lato', sans-serif;
+}
