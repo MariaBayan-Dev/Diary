@@ -4,19 +4,34 @@ const formDiary = document.getElementById('form-diary')
 const textEntries = document.getElementById('text-entries')
 const inputUrl = document.getElementById('input-url')
 
+const entriesContainer = document.getElementById('entries-container')
 
-
-//JS DEL FORMULARIO
+//CODIGO DEL FORMULARIO
 
 formDiary.addEventListener('submit', (e) => {
-
-    let entradas = textEntries.value
-    let input = inputUrl.value
-
     e.preventDefault()
 
+    let entriesText = textEntries.value
+    let inputImage = inputUrl.value
+
+    const newEntry = {
+        id: Date.now(),
+        texto: entriesText,
+        imagen: inputImage,
+        fecha: new Date().toLocaleDateString('es-ES', {
+            day: 'numeric',
+            month: 'long',
+            year: 'numeric'
+        })
+    }
+
+    const entries = JSON.parse(localStorage.getItem('diaryEntries')) || []
+
+    entries.push(newEntry)
+
+    localStorage.setItem('diaryEntries', JSON.stringify(entries))
 
     console.log("funciona!")
-    console.log(entradas)
-    console.log(input)
+    console.log(entriesText)
+    console.log(inputImage)
 })
