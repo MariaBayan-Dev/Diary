@@ -32,13 +32,10 @@ formDiary.addEventListener('submit', (e) => {
 
     localStorage.setItem('diaryEntries', JSON.stringify(entries))
 
-    renderEntry(newEntry)
     inputUrl.value = ""
     textEntries.value = ""
 
-    console.log("funciona!")
-    console.log(entriesText)
-    console.log(inputImage)
+    renderEntry(newEntry)
 })
 
 const renderEntry = (entry) => {
@@ -55,3 +52,19 @@ const renderEntry = (entry) => {
 
     entriesContainer.insertAdjacentHTML('beforeend', articleHTML)
 }
+
+entriesContainer.addEventListener('click', (evento) =>{
+    if(evento.target.classList.contains('btn-delete')){
+        const article = evento.target.closest('article')
+        const entryId = article.dataset.id
+        console.log(entryId)
+
+        article.remove()
+
+        const entries = JSON.parse(localStorage.getItem('diaryEntries')) || []
+
+        const updateEntries = entries.filter(entry => entry.id !== Number(entryId))
+
+        localStorage.setItem('diaryEntries', JSON.stringify(updateEntries))
+    }
+})
