@@ -12,6 +12,7 @@
     --bg-card: #fffaf0; /*Color fondo tarjetas (articles)*/
     --box-shadow: 0px 7px 29px 0px rgba(100, 100, 111, 0.2);
     --bg-text-area: #ebebeb; /*Color fondo textarea e inputs*/
+    --bg-date: #d6e2df; /*Color fondo fecha*/
     --accent-color: #a6ccc3; /*Color hover botones*/
     --danger-color: #c0694a; /*Color boton delete*/
     --danger-color-accent: #be1600; /*Color hover borrar entrada*/
@@ -141,16 +142,17 @@ header{
 
 .date-entry{
     border-radius: 18px;
-    background-color: var(--bg-text-area);
+    background-color: var(--bg-date);
     padding: 8px;
     font-weight: bold;
     font-size: 0.85rem;
 }
 
 .text-entry{
+    padding: 0px 10px;
     margin-top: 18px;
     font-style: italic;
-    background-color: #e5e5f7;
+    background-color: #e7e7f1;
     background-image: repeating-linear-gradient(0deg, transparent, 
     transparent 19px, rgba(180, 150, 120, 0.3) 19px,rgba(180, 150, 120, 0.3) 20px);
     background-size: 100% 20px;
