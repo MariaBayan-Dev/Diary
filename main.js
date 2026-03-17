@@ -50,8 +50,8 @@ const renderEntry = (entry) => {
     const articleHTML = `
         <article class="entries-article" data-id="${entry.id}">
         <img src="${entry.imagen}" alt="Imagen de las entradas">
-        <time>${entry.fecha}</time>
-        <p>${entry.texto}</p>
+        <time class="date-entry">${entry.fecha}</time>
+        <p class="text-entry">${entry.texto}</p>
 
         <button class="btn-edit">Editar entrada</button>
         <button class="btn-delete">Borrar entrada</button>
