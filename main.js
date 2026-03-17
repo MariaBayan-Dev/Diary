@@ -124,7 +124,7 @@ entriesContainer.addEventListener('click', (evento) =>{
 
         const confirmBtn = evento.target
         confirmBtn.textContent = 'Editar entrada'
-        confirmBtn.className = 'btn-confirm'
+        confirmBtn.className = 'btn-edit'
     }
 })
 

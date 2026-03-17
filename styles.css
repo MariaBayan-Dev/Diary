@@ -14,7 +14,7 @@
     --bg-text-area: #ebebeb; /*Color fondo textarea e inputs*/
     --accent-color: #a6ccc3; /*Color hover botones*/
     --danger-color: #c0694a; /*Color boton delete*/
-    --danger-color-accent: #753a24;
+    --danger-color-accent: #be1600; /*Color hover borrar entrada*/
 
     /*Fuentes*/
 
@@ -158,7 +158,8 @@ header{
 }
 
 .btn-edit,
-.btn-delete{
+.btn-delete,
+.btn-confirm{
     border: none;
     padding: 6px 12px;
     border-radius: 15px;
@@ -170,7 +171,8 @@ header{
     cursor: pointer;
 }
 
-.btn-edit{
+.btn-edit,
+.btn-confirm{
     background-color: var(--button-color);
 }
 
@@ -178,11 +180,29 @@ header{
     background-color: var(--danger-color);
 }
 
-.btn-edit:hover{
+.btn-edit:hover,
+.btn-confirm:hover{
     background-color: var(--accent-color);
     color: var(--text-color);
 }
 
 .btn-delete:hover{
     background-color: var(--danger-color-accent);
+}
+
+/*---ARTICLE CREADO DEL JS--*/
+
+article textarea{
+    width: 100%;
+    padding: 10px;
+    margin-top: 15px;
+    border-radius: 10px;
+    border: 1px solid var(--accent-color);
+    font-family: var(--text-font);
+    resize: none;
+    min-height: 100px;
+}
+
+article textarea:focus{
+    outline: 2px solid var(--accent-color);
 }
