@@ -9,11 +9,17 @@ const entriesContainer = document.getElementById('entries-container')
 
 //CODIGO DEL FORMULARIO
 
+//FUNCION DEL BOTON
+
 formDiary.addEventListener('submit', (e) => {
     e.preventDefault()
 
     let entriesText = textEntries.value
     let inputImage = inputUrl.value
+
+    if(!entriesText){
+        return
+    }
 
     const newEntry = {
         id: Date.now(),
@@ -38,6 +44,8 @@ formDiary.addEventListener('submit', (e) => {
     renderEntry(newEntry)
 })
 
+//CREACION DE LA ENTRADA
+
 const renderEntry = (entry) => {
     const articleHTML = `
         <article class="entries-article" data-id="${entry.id}">
@@ -52,6 +60,21 @@ const renderEntry = (entry) => {
 
     entriesContainer.insertAdjacentHTML('beforeend', articleHTML)
 }
+
+//DEJAR LA ENTRADA CARGADA
+
+const loadEntries = () => {
+    const entries = JSON.parse(localStorage.getItem('diaryEntries')) || []
+
+    entries.forEach(entry => {
+        renderEntry(entry)
+    });
+}
+
+loadEntries()
+
+
+//BORRAR ENTRADA
 
 entriesContainer.addEventListener('click', (evento) =>{
     if(evento.target.classList.contains('btn-delete')){
