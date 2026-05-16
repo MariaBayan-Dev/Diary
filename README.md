@@ -27,8 +27,9 @@ Lorem impsum
 - Lorem impsum.
 
 ## 🔗 Live Demo
-👉 [Mini Shop](https://mariabayan-dev.github.io/Mini-Shop/)
+👉 [Diary](https://mariabayan-dev.github.io/Diary/)
 
 ## 📸 Preview
 
-<img width="1917" height="911" alt="mini-shop-preview" src="https://github.com/user-attachments/assets/9bae4e3c-1ffe-4aae-afb4-5eedac1a2509" />
+<img width="1901" height="901" alt="diary-preview" src="https://github.com/user-attachments/assets/eff0f71f-5682-4c99-8986-8bf089e89478" />
+
