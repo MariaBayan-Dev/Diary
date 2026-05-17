@@ -1,6 +1,6 @@
 # 📓 Diary
 
-Lorem impsum
+A personal diary project where the user can create an entry, add an image URL, and publish it. They can also delete and edit it.
 
 ## 🚀 Features
 - Lorem impsum.
