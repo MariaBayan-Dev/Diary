@@ -3,10 +3,10 @@
 A personal diary project where the user can create an entry, add an image URL, and publish it. They can also delete and edit it.
 
 ## 🚀 Features
-- Lorem impsum.
-- Lorem impsum.
-- Lorem impsum.
-- Lorem impsum.
+
+- Can write text and add an external image.
+- Publish the post, and even after updating the website, the post will remain.
+- You can delete and edit the post. Save changes.
 
 ## 🛠️ Technologies
 
