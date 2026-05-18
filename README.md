@@ -36,16 +36,12 @@ A personal diary project where the user can create an entry, add an image URL, a
 
 ## 🔮 Future Improvements
 
-- Add a search bar to filter entries by text content.
-- Add mood tags (e.g. happy, sad, reflective) to 
-  categorize each entry.
-- Add the ability to sort entries by date 
-  (newest or oldest first).
-- Rebuild using React to simplify state management 
-  and reduce manual DOM manipulation.
-- Add a search bar to filter entries by text content, 
-  using filter() and includes() to match the search 
-  term against each entry's text.
+- Add mood tags (e.g. happy, sad, reflective) to categorize each entry.
+- Add the ability to sort entries by date (newest or oldest first).
+- Add a search bar to filter entries by text content, using filter() 
+  and includes() to match the search term against each entry's text.
+- Rebuild using React to simplify state management and reduce 
+  manual DOM manipulation.
 
 ## 🔗 Live Demo
 👉 [Diary](https://mariabayan-dev.github.io/Diary/)
