@@ -43,7 +43,7 @@ A personal diary project where the user can create an entry, add an image URL, a
   (newest or oldest first).
 - Rebuild using React to simplify state management 
   and reduce manual DOM manipulation.
-  - Add a search bar to filter entries by text content, 
+- Add a search bar to filter entries by text content, 
   using filter() and includes() to match the search 
   term against each entry's text.
 
