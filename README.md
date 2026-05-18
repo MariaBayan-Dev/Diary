@@ -15,16 +15,37 @@ A personal diary project where the user can create an entry, add an image URL, a
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=grey)
 
 ## 📚 What I learned
-- Lorem impsum.
-- Lorem impsum.
-- Lorem impsum.
-- Lorem impsum.
 
-## 💡 Future improvements
-- Lorem impsum.
-- Lorem impsum.
-- Lorem impsum.
-- Lorem impsum.
+- How to implement a full CRUD with localStorage — creating, 
+  reading, updating and deleting entries that persist 
+  after page reload.
+- How to generate unique IDs using Date.now() and store 
+  them as data attributes in the DOM to retrieve them 
+  on user interaction.
+- How to update a specific entry in localStorage using 
+  map() to return a new array where only the matching 
+  entry is modified, combined with the spread operator 
+  to update only the relevant field without mutating 
+  the original object.
+- How to use event delegation to handle three different 
+  actions (delete, edit, confirm) from a single listener 
+  on the parent container.
+- How to dynamically replace DOM elements — swapping a 
+  paragraph for a textarea when editing, and back again 
+  after confirming.
+
+## 🔮 Future Improvements
+
+- Add a search bar to filter entries by text content.
+- Add mood tags (e.g. happy, sad, reflective) to 
+  categorize each entry.
+- Add the ability to sort entries by date 
+  (newest or oldest first).
+- Rebuild using React to simplify state management 
+  and reduce manual DOM manipulation.
+  - Add a search bar to filter entries by text content, 
+  using filter() and includes() to match the search 
+  term against each entry's text.
 
 ## 🔗 Live Demo
 👉 [Diary](https://mariabayan-dev.github.io/Diary/)
